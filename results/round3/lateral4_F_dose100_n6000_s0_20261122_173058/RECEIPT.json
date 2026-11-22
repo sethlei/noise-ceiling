@@ -1,0 +1,257 @@
+{
+ "config": {
+  "registry_version_dir": "reg/sethlei/oil-fundamentals-prices/1.0.0",
+  "llm_id": "meta-llama/Llama-3.2-1B",
+  "checkpoint_repo": "OpenTSLM/llama-3.2-1b-m4-sp",
+  "information_set": "per-signal",
+  "window": 48,
+  "aux": false,
+  "epochs": 9,
+  "patience": 3,
+  "batch_size": 8,
+  "lr_encoder": 0.0002,
+  "lr_projector": 0.0001,
+  "lr_lora": 0.0002,
+  "weight_decay": 0.01,
+  "warmup_frac": 0.1,
+  "grad_clip": 1.0,
+  "lora": true,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "seed": 0,
+  "gradient_checkpointing": true,
+  "arm": "F",
+  "arm_phases": [
+   [
+    [
+     1,
+     1.0
+    ]
+   ],
+   [
+    [
+     1,
+     1.0
+    ]
+   ],
+   [
+    [
+     1,
+     1.0
+    ]
+   ]
+  ],
+  "lateral_source": "dose",
+  "dose": 1.0,
+  "scale_mode": "visible",
+  "train_seed": 0,
+  "data_seed": 0,
+  "K": 2,
+  "n_train": 6000,
+  "anchors": [
+   0,
+   6,
+   12,
+   18,
+   24,
+   30,
+   35
+  ],
+  "spec": "an earlier internal spec, not published"
+ },
+ "started": "2026-11-22T17:30:58+0000",
+ "events": [
+  {
+   "t": "17:32:51",
+   "phase": 1,
+   "epoch": 0,
+   "train_loss": 0.5694,
+   "val_loss": 0.6881,
+   "seconds": 103.5
+  },
+  {
+   "t": "17:34:34",
+   "phase": 1,
+   "epoch": 1,
+   "train_loss": 0.4591,
+   "val_loss": 0.7484,
+   "seconds": 103.5
+  },
+  {
+   "t": "17:36:17",
+   "phase": 1,
+   "epoch": 2,
+   "train_loss": 0.4163,
+   "val_loss": 0.6871,
+   "seconds": 103.1
+  },
+  {
+   "t": "17:38:08",
+   "phase": 2,
+   "epoch": 0,
+   "train_loss": 0.4749,
+   "val_loss": 0.6745,
+   "seconds": 103.6
+  },
+  {
+   "t": "17:39:51",
+   "phase": 2,
+   "epoch": 1,
+   "train_loss": 0.4998,
+   "val_loss": 0.8717,
+   "seconds": 103.6
+  },
+  {
+   "t": "17:41:35",
+   "phase": 2,
+   "epoch": 2,
+   "train_loss": 0.4113,
+   "val_loss": 0.7268,
+   "seconds": 103.5
+  },
+  {
+   "t": "17:43:25",
+   "phase": 3,
+   "epoch": 0,
+   "train_loss": 0.499,
+   "val_loss": 0.9238,
+   "seconds": 103.6
+  },
+  {
+   "t": "17:45:09",
+   "phase": 3,
+   "epoch": 1,
+   "train_loss": 0.5001,
+   "val_loss": 0.7627,
+   "seconds": 103.7
+  },
+  {
+   "t": "17:46:53",
+   "phase": 3,
+   "epoch": 2,
+   "train_loss": 0.4018,
+   "val_loss": 0.7309,
+   "seconds": 103.7
+  }
+ ],
+ "status": "DONE",
+ "device": "cuda",
+ "platform": "Linux-6.11.0-1016-nvidia-x86_64-with-glibc2.39",
+ "torch": "2.15.0+cu132",
+ "sha": {
+  "box": "c197ba1245c31fcf86de0ed0d0e7209ff7f0a034"
+ },
+ "before_training": {
+  "stage1": {
+   "n": 600,
+   "top1": 0.4866666666666667,
+   "majority": 0.5133333333333333,
+   "logscore": 0.8553340435028076,
+   "output_variation": 0.03161320835351944
+  },
+  "stage2": {
+   "n": 600,
+   "top1": 0.49833333333333335,
+   "majority": 0.5016666666666667,
+   "logscore": 0.7597434520721436,
+   "output_variation": 0.021279115229845047
+  },
+  "stage3": {
+   "n": 600,
+   "top1": 0.4866666666666667,
+   "majority": 0.5133333333333333,
+   "logscore": 0.737812340259552,
+   "output_variation": 0.019027847796678543
+  }
+ },
+ "epochs_per_phase": 3,
+ "table": {
+  "after_phase1": {
+   "stage1": {
+    "n": 600,
+    "top1": 0.69,
+    "majority": 0.5133333333333333,
+    "logscore": 0.592163622379303,
+    "output_variation": 0.17882563173770905
+   },
+   "stage2": {
+    "n": 600,
+    "top1": 0.8266666666666667,
+    "majority": 0.5016666666666667,
+    "logscore": 0.3948659896850586,
+    "output_variation": 0.35493651032447815
+   },
+   "stage3": {
+    "n": 600,
+    "top1": 0.5816666666666667,
+    "majority": 0.5133333333333333,
+    "logscore": 0.9416280388832092,
+    "output_variation": 0.3395364582538605
+   }
+  },
+  "after_phase2": {
+   "stage1": {
+    "n": 600,
+    "top1": 0.5733333333333334,
+    "majority": 0.5133333333333333,
+    "logscore": 0.6321911811828613,
+    "output_variation": 0.1312749981880188
+   },
+   "stage2": {
+    "n": 600,
+    "top1": 0.8316666666666667,
+    "majority": 0.5016666666666667,
+    "logscore": 0.38025230169296265,
+    "output_variation": 0.35727137327194214
+   },
+   "stage3": {
+    "n": 600,
+    "top1": 0.5883333333333334,
+    "majority": 0.5133333333333333,
+    "logscore": 0.9424936175346375,
+    "output_variation": 0.3308489918708801
+   }
+  },
+  "after_phase3": {
+   "stage1": {
+    "n": 600,
+    "top1": 0.6366666666666667,
+    "majority": 0.5133333333333333,
+    "logscore": 0.6255438327789307,
+    "output_variation": 0.14787831902503967
+   },
+   "stage2": {
+    "n": 600,
+    "top1": 0.8283333333333334,
+    "majority": 0.5016666666666667,
+    "logscore": 0.4031352996826172,
+    "output_variation": 0.3688625991344452
+   },
+   "stage3": {
+    "n": 600,
+    "top1": 0.5883333333333334,
+    "majority": 0.5133333333333333,
+    "logscore": 0.9453322291374207,
+    "output_variation": 0.34445852041244507
+   }
+  }
+ },
+ "phase_composition": {
+  "phase1": {
+   "stage2": 6000
+  },
+  "phase2": {
+   "stage2": 6000
+  },
+  "phase3": {
+   "stage2": 6000
+  }
+ },
+ "item_passes_per_scale_so_far": {
+  "stage1": 0,
+  "stage2": 54000,
+  "stage3": 0
+ },
+ "train_seconds": 952.0,
+ "ended": "2026-11-22T17:46:59+0000"
+}

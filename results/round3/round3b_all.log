@@ -1,0 +1,33 @@
+=== 2026-11-22 17:21:48 lateral4 --arm F --source dose --dose 1.0 --seed 0 --n-eval 600
+# curriculum arm F / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(1, 1.0)], [(1, 1.0)], [(1, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.512 | 0.512 | 0.538 |
+| after_phase1 | 0.533 | 0.813 | 0.550 |
+| after_phase2 | 0.520 | 0.820 | 0.572 |
+| after_phase3 | 0.475 | 0.830 | 0.567 |
+=== 2026-11-22 17:26:17 lateral4 --arm F --source real --seed 0 --n-eval 600
+# curriculum arm F / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(1, 1.0)], [(1, 1.0)], [(1, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.523 | 0.801 | 0.565 |
+| after_phase2 | 0.522 | 0.791 | 0.549 |
+| after_phase3 | 0.517 | 0.811 | 0.559 |
+=== 2026-11-22 17:30:54 lateral4 --arm F --source dose --dose 1.0 --seed 0 --n-eval 600 --n-train 6000
+# curriculum arm F / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(1, 1.0)], [(1, 1.0)], [(1, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.487 | 0.498 | 0.487 |
+| after_phase1 | 0.690 | 0.827 | 0.582 |
+| after_phase2 | 0.573 | 0.832 | 0.588 |
+| after_phase3 | 0.637 | 0.828 | 0.588 |
+=== 2026-11-22 17:47:00 lateral4 --arm F --source real --seed 0 --n-eval 600 --n-train 4500
+# curriculum arm F / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(1, 1.0)], [(1, 1.0)], [(1, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.607 | 0.809 | 0.533 |
+| after_phase2 | 0.599 | 0.791 | 0.514 |
+| after_phase3 | 0.604 | 0.788 | 0.523 |
+=== done 2026-11-22 17:59:14 fails=0

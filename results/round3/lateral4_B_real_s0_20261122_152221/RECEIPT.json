@@ -1,0 +1,326 @@
+{
+ "config": {
+  "registry_version_dir": "reg/sethlei/oil-fundamentals-prices/1.0.0",
+  "llm_id": "meta-llama/Llama-3.2-1B",
+  "checkpoint_repo": "OpenTSLM/llama-3.2-1b-m4-sp",
+  "information_set": "per-signal",
+  "window": 48,
+  "aux": false,
+  "epochs": 9,
+  "patience": 3,
+  "batch_size": 8,
+  "lr_encoder": 0.0002,
+  "lr_projector": 0.0001,
+  "lr_lora": 0.0002,
+  "weight_decay": 0.01,
+  "warmup_frac": 0.1,
+  "grad_clip": 1.0,
+  "lora": true,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "seed": 0,
+  "gradient_checkpointing": true,
+  "arm": "B",
+  "arm_phases": [
+   [
+    [
+     0,
+     1.0
+    ]
+   ],
+   [
+    [
+     1,
+     0.6666666666666666
+    ],
+    [
+     0,
+     0.3333333333333333
+    ]
+   ],
+   [
+    [
+     2,
+     0.5
+    ],
+    [
+     1,
+     0.25
+    ],
+    [
+     0,
+     0.25
+    ]
+   ]
+  ],
+  "lateral_source": "real",
+  "dose": null,
+  "scale_mode": "visible",
+  "train_seed": 0,
+  "data_seed": 0,
+  "K": 2,
+  "n_train": 1500,
+  "anchors": [
+   0,
+   6,
+   12,
+   18,
+   24,
+   30,
+   35
+  ],
+  "spec": "an earlier internal spec, not published"
+ },
+ "started": "2026-11-22T15:22:21+0000",
+ "events": [
+  {
+   "t": "15:22:59",
+   "phase": 1,
+   "epoch": 0,
+   "train_loss": 0.7168,
+   "val_loss": 0.6542,
+   "seconds": 26.4
+  },
+  {
+   "t": "15:23:25",
+   "phase": 1,
+   "epoch": 1,
+   "train_loss": 0.6386,
+   "val_loss": 0.7098,
+   "seconds": 26.4
+  },
+  {
+   "t": "15:23:51",
+   "phase": 1,
+   "epoch": 2,
+   "train_loss": 0.5861,
+   "val_loss": 0.6808,
+   "seconds": 26.2
+  },
+  {
+   "t": "15:24:25",
+   "phase": 2,
+   "epoch": 0,
+   "train_loss": 0.6025,
+   "val_loss": 0.8526,
+   "seconds": 26.7
+  },
+  {
+   "t": "15:24:51",
+   "phase": 2,
+   "epoch": 1,
+   "train_loss": 0.5555,
+   "val_loss": 0.6632,
+   "seconds": 26.6
+  },
+  {
+   "t": "15:25:18",
+   "phase": 2,
+   "epoch": 2,
+   "train_loss": 0.4822,
+   "val_loss": 0.6852,
+   "seconds": 26.5
+  },
+  {
+   "t": "15:25:52",
+   "phase": 3,
+   "epoch": 0,
+   "train_loss": 0.7005,
+   "val_loss": 0.7028,
+   "seconds": 26.9
+  },
+  {
+   "t": "15:26:19",
+   "phase": 3,
+   "epoch": 1,
+   "train_loss": 0.5929,
+   "val_loss": 0.6291,
+   "seconds": 26.8
+  },
+  {
+   "t": "15:26:45",
+   "phase": 3,
+   "epoch": 2,
+   "train_loss": 0.5143,
+   "val_loss": 0.5927,
+   "seconds": 26.8
+  }
+ ],
+ "status": "DONE",
+ "device": "cuda",
+ "platform": "Linux-6.11.0-1016-nvidia-x86_64-with-glibc2.39",
+ "torch": "2.15.0+cu132",
+ "sha": {
+  "box": "c197ba1245c31fcf86de0ed0d0e7209ff7f0a034"
+ },
+ "heldout_series": [
+  "cftc_067651_prod_merc_long",
+  "eia_RCLC1",
+  "eia_intl_OPEC",
+  "frb_dollar",
+  "gpr_gpr",
+  "jodi_DZ_INDPROD",
+  "jodi_ES_INDPROD",
+  "jodi_GB_INDPROD",
+  "jodi_ID_INDPROD",
+  "jodi_MA_INDPROD",
+  "jodi_NL_INDPROD",
+  "jodi_PE_INDPROD",
+  "jodi_PG_INDPROD",
+  "jodi_PH_INDPROD",
+  "jodi_QA_INDPROD",
+  "jodi_SR_INDPROD"
+ ],
+ "twins_excluded_from_training": {
+  "eia_RBRTE": [
+   "eia_RCLC1",
+   0.945
+  ],
+  "eia_RWTC": [
+   "wti_monthly_mean",
+   1.0
+  ],
+  "eia_intl_MIDE": [
+   "eia_intl_OPEC",
+   0.97
+  ],
+  "eia_intl_NOEC": [
+   "eia_intl_OPEC",
+   0.962
+  ],
+  "eia_intl_PERG": [
+   "eia_intl_OPEC",
+   0.97
+  ],
+  "eia_intl_WORL": [
+   "eia_intl_OPEC",
+   0.854
+  ],
+  "frb_DTWEXBGS": [
+   "frb_dollar",
+   1.0
+  ],
+  "frb_DTWEXM": [
+   "frb_dollar",
+   0.985
+  ]
+ },
+ "n_eval_heldout": 600,
+ "n_wti_eval": 23,
+ "before_training": {
+  "stage1": {
+   "n": 623,
+   "top1": 0.4895666131621188,
+   "majority": 0.5104333868378812,
+   "logscore": 0.8484921455383301,
+   "output_variation": 0.03463859483599663
+  },
+  "stage2": {
+   "n": 623,
+   "top1": 0.4895666131621188,
+   "majority": 0.5104333868378812,
+   "logscore": 0.7638775110244751,
+   "output_variation": 0.022575045004487038
+  },
+  "stage3": {
+   "n": 623,
+   "top1": 0.4943820224719101,
+   "majority": 0.5040128410914928,
+   "logscore": 0.7385417222976685,
+   "output_variation": 0.023580290377140045
+  }
+ },
+ "epochs_per_phase": 3,
+ "table": {
+  "after_phase1": {
+   "stage1": {
+    "n": 623,
+    "top1": 0.7110754414125201,
+    "majority": 0.5104333868378812,
+    "logscore": 0.5875746011734009,
+    "output_variation": 0.24917259812355042
+   },
+   "stage2": {
+    "n": 623,
+    "top1": 0.6179775280898876,
+    "majority": 0.5104333868378812,
+    "logscore": 0.6714666485786438,
+    "output_variation": 0.16539432108402252
+   },
+   "stage3": {
+    "n": 623,
+    "top1": 0.5441412520064205,
+    "majority": 0.5040128410914928,
+    "logscore": 0.7277929782867432,
+    "output_variation": 0.14038941264152527
+   }
+  },
+  "after_phase2": {
+   "stage1": {
+    "n": 623,
+    "top1": 0.7367576243980738,
+    "majority": 0.5104333868378812,
+    "logscore": 0.6015883088111877,
+    "output_variation": 0.28081315755844116
+   },
+   "stage2": {
+    "n": 623,
+    "top1": 0.7784911717495987,
+    "majority": 0.5104333868378812,
+    "logscore": 0.507917046546936,
+    "output_variation": 0.3111857771873474
+   },
+   "stage3": {
+    "n": 623,
+    "top1": 0.5569823434991974,
+    "majority": 0.5040128410914928,
+    "logscore": 0.8979768753051758,
+    "output_variation": 0.25550371408462524
+   }
+  },
+  "after_phase3": {
+   "stage1": {
+    "n": 623,
+    "top1": 0.7223113964686998,
+    "majority": 0.5104333868378812,
+    "logscore": 0.6089478731155396,
+    "output_variation": 0.31242844462394714
+   },
+   "stage2": {
+    "n": 623,
+    "top1": 0.7576243980738363,
+    "majority": 0.5104333868378812,
+    "logscore": 0.5380666851997375,
+    "output_variation": 0.2888577878475189
+   },
+   "stage3": {
+    "n": 623,
+    "top1": 0.6468699839486356,
+    "majority": 0.5040128410914928,
+    "logscore": 0.6792064905166626,
+    "output_variation": 0.27022454142570496
+   }
+  }
+ },
+ "phase_composition": {
+  "phase1": {
+   "stage1": 1500
+  },
+  "phase2": {
+   "stage2": 1000,
+   "stage1": 500
+  },
+  "phase3": {
+   "stage3": 750,
+   "stage2": 375,
+   "stage1": 375
+  }
+ },
+ "item_passes_per_scale_so_far": {
+  "stage1": 7125,
+  "stage2": 4125,
+  "stage3": 2250
+ },
+ "train_seconds": 259.9,
+ "ended": "2026-11-22T15:26:52+0000"
+}

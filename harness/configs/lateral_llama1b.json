@@ -1,0 +1,7 @@
+{
+  "registry_version_dir": "reg/sethlei/oil-fundamentals-prices/1.0.0",
+  "llm_id": "meta-llama/Llama-3.2-1B", "checkpoint_repo": "OpenTSLM/llama-3.2-1b-m4-sp",
+  "information_set": "per-signal", "window": 48, "aux": false,
+  "epochs": 9, "patience": 3, "batch_size": 8, "lr_encoder": 0.0002, "lr_projector": 0.0001, "lr_lora": 0.0002,
+  "weight_decay": 0.01, "warmup_frac": 0.1, "grad_clip": 1.0, "lora": true, "lora_r": 16, "lora_alpha": 32, "seed": 0, "gradient_checkpointing": true
+}

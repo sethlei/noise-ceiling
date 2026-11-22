@@ -1,0 +1,99 @@
+real stage1 n=623 k=3 m=3 random_walk_closed_form=0.750 majority=0.510 rule=0.740 logit=0.717 gbm=0.724 rule_wti_only=0.870
+    LM A_s0 top1=0.620 agrees_with_rule=0.716 lm_right_rule_wrong=51 rule_right_lm_wrong=126 wti_only=0.565 top1_after_phase1=0.711 top1_after_phase2=0.647
+    LM A_s1 top1=0.610 agrees_with_rule=0.687 lm_right_rule_wrong=57 rule_right_lm_wrong=138 wti_only=0.522 top1_after_phase1=0.706 top1_after_phase2=0.568
+    LM B_s0 top1=0.722 agrees_with_rule=0.905 lm_right_rule_wrong=24 rule_right_lm_wrong=35 wti_only=0.870 top1_after_phase1=0.711 top1_after_phase2=0.737
+    LM B_s1 top1=0.705 agrees_with_rule=0.881 lm_right_rule_wrong=26 rule_right_lm_wrong=48 wti_only=0.826 top1_after_phase1=0.706 top1_after_phase2=0.719
+    LM C_s0 top1=0.716 agrees_with_rule=0.905 lm_right_rule_wrong=22 rule_right_lm_wrong=37 wti_only=0.826 top1_after_phase1=0.605 top1_after_phase2=0.684
+    LM C_s1 top1=0.727 agrees_with_rule=0.900 lm_right_rule_wrong=27 rule_right_lm_wrong=35 wti_only=0.826 top1_after_phase1=0.666 top1_after_phase2=0.705
+    LM D_s0 top1=0.706 agrees_with_rule=0.896 lm_right_rule_wrong=22 rule_right_lm_wrong=43 wti_only=0.870 top1_after_phase1=0.591 top1_after_phase2=0.612
+    LM D_s1 top1=0.714 agrees_with_rule=0.920 lm_right_rule_wrong=17 rule_right_lm_wrong=33 wti_only=0.870 top1_after_phase1=0.604 top1_after_phase2=0.543
+    LM E_s0 top1=0.563 agrees_with_rule=0.628 lm_right_rule_wrong=61 rule_right_lm_wrong=171 wti_only=0.565 top1_after_phase1=0.591 top1_after_phase2=0.589
+    LM E_s1 top1=0.562 agrees_with_rule=0.575 lm_right_rule_wrong=77 rule_right_lm_wrong=188 wti_only=0.478 top1_after_phase1=0.604 top1_after_phase2=0.589
+    LM F_n4500_s0 top1=0.604 agrees_with_rule=0.687 lm_right_rule_wrong=55 rule_right_lm_wrong=140 wti_only=0.609 top1_after_phase1=0.607 top1_after_phase2=0.599
+    LM F_s0 top1=0.517 agrees_with_rule=0.543 lm_right_rule_wrong=73 rule_right_lm_wrong=212 wti_only=0.435 top1_after_phase1=0.523 top1_after_phase2=0.522
+real stage2 n=623 k=3 m=1 random_walk_closed_form=0.833 majority=0.510 rule=0.815 logit=0.791 gbm=0.809 n_agree=443 n_disagree=180 rule_agree=0.842 rule_disagree=0.750 logit_agree=0.817 logit_disagree=0.728 gbm_agree=0.835 gbm_disagree=0.744 rule_wti_only=0.826
+    LM A_s0 top1=0.624 agrees_with_rule=0.648 lm_right_rule_wrong=50 rule_right_lm_wrong=169 agree=0.682 disagree=0.483 wti_only=0.652 top1_after_phase1=0.618 top1_after_phase2=0.787
+    LM A_s1 top1=0.616 agrees_with_rule=0.650 lm_right_rule_wrong=47 rule_right_lm_wrong=171 agree=0.659 disagree=0.511 wti_only=0.652 top1_after_phase1=0.613 top1_after_phase2=0.804
+    LM B_s0 top1=0.758 agrees_with_rule=0.820 lm_right_rule_wrong=38 rule_right_lm_wrong=74 agree=0.801 disagree=0.650 wti_only=0.783 top1_after_phase1=0.618 top1_after_phase2=0.778
+    LM B_s1 top1=0.730 agrees_with_rule=0.774 lm_right_rule_wrong=44 rule_right_lm_wrong=97 agree=0.779 disagree=0.611 wti_only=0.696 top1_after_phase1=0.613 top1_after_phase2=0.764
+    LM C_s0 top1=0.732 agrees_with_rule=0.795 lm_right_rule_wrong=38 rule_right_lm_wrong=90 agree=0.797 disagree=0.572 wti_only=0.783 top1_after_phase1=0.682 top1_after_phase2=0.709
+    LM C_s1 top1=0.742 agrees_with_rule=0.798 lm_right_rule_wrong=40 rule_right_lm_wrong=86 agree=0.788 disagree=0.628 wti_only=0.696 top1_after_phase1=0.695 top1_after_phase2=0.758
+    LM D_s0 top1=0.743 agrees_with_rule=0.815 lm_right_rule_wrong=35 rule_right_lm_wrong=80 agree=0.817 disagree=0.561 wti_only=0.826 top1_after_phase1=0.607 top1_after_phase2=0.777
+    LM D_s1 top1=0.737 agrees_with_rule=0.783 lm_right_rule_wrong=43 rule_right_lm_wrong=92 agree=0.817 disagree=0.539 wti_only=0.826 top1_after_phase1=0.620 top1_after_phase2=0.759
+    LM E_s0 top1=0.596 agrees_with_rule=0.610 lm_right_rule_wrong=53 rule_right_lm_wrong=190 agree=0.628 disagree=0.517 wti_only=0.696 top1_after_phase1=0.607 top1_after_phase2=0.602
+    LM E_s1 top1=0.571 agrees_with_rule=0.592 lm_right_rule_wrong=51 rule_right_lm_wrong=203 agree=0.605 disagree=0.489 wti_only=0.609 top1_after_phase1=0.620 top1_after_phase2=0.596
+    LM F_n4500_s0 top1=0.788 agrees_with_rule=0.864 lm_right_rule_wrong=34 rule_right_lm_wrong=51 agree=0.813 disagree=0.728 wti_only=0.870 top1_after_phase1=0.809 top1_after_phase2=0.791
+    LM F_s0 top1=0.811 agrees_with_rule=0.870 lm_right_rule_wrong=39 rule_right_lm_wrong=42 agree=0.822 disagree=0.783 wti_only=0.826 top1_after_phase1=0.801 top1_after_phase2=0.791
+real stage3 n=623 k=1 m=1 random_walk_closed_form=0.750 majority=0.504 rule=0.727 logit=0.705 gbm=0.714 n_agree=301 n_disagree=322 rule_agree=0.714 rule_disagree=0.739 logit_agree=0.731 logit_disagree=0.680 gbm_agree=0.694 gbm_disagree=0.733 rule_wti_only=0.652
+    LM A_s0 top1=0.705 agrees_with_rule=0.897 lm_right_rule_wrong=25 rule_right_lm_wrong=39 agree=0.691 disagree=0.717 wti_only=0.696 top1_after_phase1=0.544 top1_after_phase2=0.546
+    LM A_s1 top1=0.711 agrees_with_rule=0.894 lm_right_rule_wrong=28 rule_right_lm_wrong=38 agree=0.731 disagree=0.693 wti_only=0.609 top1_after_phase1=0.496 top1_after_phase2=0.544
+    LM B_s0 top1=0.647 agrees_with_rule=0.759 lm_right_rule_wrong=50 rule_right_lm_wrong=100 agree=0.751 disagree=0.550 wti_only=0.609 top1_after_phase1=0.544 top1_after_phase2=0.557
+    LM B_s1 top1=0.647 agrees_with_rule=0.759 lm_right_rule_wrong=50 rule_right_lm_wrong=100 agree=0.751 disagree=0.550 wti_only=0.652 top1_after_phase1=0.496 top1_after_phase2=0.570
+    LM C_s0 top1=0.663 agrees_with_rule=0.811 lm_right_rule_wrong=39 rule_right_lm_wrong=79 agree=0.764 disagree=0.568 wti_only=0.652 top1_after_phase1=0.604 top1_after_phase2=0.673
+    LM C_s1 top1=0.636 agrees_with_rule=0.783 lm_right_rule_wrong=39 rule_right_lm_wrong=96 agree=0.691 disagree=0.584 wti_only=0.609 top1_after_phase1=0.602 top1_after_phase2=0.640
+    LM D_s0 top1=0.594 agrees_with_rule=0.703 lm_right_rule_wrong=51 rule_right_lm_wrong=134 agree=0.761 disagree=0.438 wti_only=0.565 top1_after_phase1=0.690 top1_after_phase2=0.578
+    LM D_s1 top1=0.626 agrees_with_rule=0.783 lm_right_rule_wrong=36 rule_right_lm_wrong=99 agree=0.714 disagree=0.543 wti_only=0.652 top1_after_phase1=0.697 top1_after_phase2=0.621
+    LM E_s0 top1=0.677 agrees_with_rule=0.828 lm_right_rule_wrong=38 rule_right_lm_wrong=69 agree=0.681 disagree=0.674 wti_only=0.696 top1_after_phase1=0.690 top1_after_phase2=0.681
+    LM E_s1 top1=0.663 agrees_with_rule=0.778 lm_right_rule_wrong=49 rule_right_lm_wrong=89 agree=0.648 disagree=0.677 wti_only=0.696 top1_after_phase1=0.697 top1_after_phase2=0.682
+    LM F_n4500_s0 top1=0.523 agrees_with_rule=0.568 lm_right_rule_wrong=71 rule_right_lm_wrong=198 agree=0.661 disagree=0.394 wti_only=0.391 top1_after_phase1=0.533 top1_after_phase2=0.514
+    LM F_s0 top1=0.559 agrees_with_rule=0.581 lm_right_rule_wrong=78 rule_right_lm_wrong=183 agree=0.701 disagree=0.425 wti_only=0.522 top1_after_phase1=0.565 top1_after_phase2=0.549
+synth stage1 n=300 k=3 m=3 random_walk_closed_form=0.750 majority=0.507 rule=0.793 logit=0.790 gbm=0.810
+    LM C_s0 top1=0.803 agrees_with_rule=0.950 lm_right_rule_wrong=9 rule_right_lm_wrong=6 top1_after_phase1=0.810 top1_after_phase2=0.810
+    LM C_s1 top1=0.823 agrees_with_rule=0.930 lm_right_rule_wrong=15 rule_right_lm_wrong=6 top1_after_phase1=0.790 top1_after_phase2=0.813
+    LM E_s0 top1=0.503 agrees_with_rule=0.577 lm_right_rule_wrong=20 rule_right_lm_wrong=107 top1_after_phase1=0.593 top1_after_phase2=0.593
+    LM E_s1 top1=0.703 agrees_with_rule=0.783 lm_right_rule_wrong=19 rule_right_lm_wrong=46 top1_after_phase1=0.607 top1_after_phase2=0.600
+synth stage2 n=300 k=3 m=1 random_walk_closed_form=0.833 majority=0.503 rule=0.907 logit=0.937 gbm=0.927 n_agree=247 n_disagree=53 rule_agree=0.919 rule_disagree=0.849 logit_agree=0.968 logit_disagree=0.792 gbm_agree=0.955 gbm_disagree=0.792
+    LM C_s0 top1=0.900 agrees_with_rule=0.947 lm_right_rule_wrong=7 rule_right_lm_wrong=9 agree=0.935 disagree=0.736 top1_after_phase1=0.887 top1_after_phase2=0.910
+    LM C_s1 top1=0.890 agrees_with_rule=0.930 lm_right_rule_wrong=8 rule_right_lm_wrong=13 agree=0.939 disagree=0.660 top1_after_phase1=0.870 top1_after_phase2=0.880
+    LM E_s0 top1=0.550 agrees_with_rule=0.563 lm_right_rule_wrong=12 rule_right_lm_wrong=119 agree=0.518 disagree=0.698 top1_after_phase1=0.783 top1_after_phase2=0.633
+    LM E_s1 top1=0.653 agrees_with_rule=0.660 lm_right_rule_wrong=13 rule_right_lm_wrong=89 agree=0.632 disagree=0.755 top1_after_phase1=0.643 top1_after_phase2=0.647
+synth stage3 n=300 k=1 m=1 random_walk_closed_form=0.750 majority=0.517 rule=0.900 logit=0.913 gbm=0.903 n_agree=200 n_disagree=100 rule_agree=0.930 rule_disagree=0.840 logit_agree=0.985 logit_disagree=0.770 gbm_agree=0.970 gbm_disagree=0.770
+    LM C_s0 top1=0.870 agrees_with_rule=0.897 lm_right_rule_wrong=11 rule_right_lm_wrong=20 agree=0.980 disagree=0.650 top1_after_phase1=0.807 top1_after_phase2=0.840
+    LM C_s1 top1=0.863 agrees_with_rule=0.897 lm_right_rule_wrong=10 rule_right_lm_wrong=21 agree=0.970 disagree=0.650 top1_after_phase1=0.797 top1_after_phase2=0.853
+    LM E_s0 top1=0.893 agrees_with_rule=0.933 lm_right_rule_wrong=9 rule_right_lm_wrong=11 agree=0.965 disagree=0.750 top1_after_phase1=0.870 top1_after_phase2=0.890
+    LM E_s1 top1=0.913 agrees_with_rule=0.940 lm_right_rule_wrong=11 rule_right_lm_wrong=7 agree=0.975 disagree=0.790 top1_after_phase1=0.867 top1_after_phase2=0.900
+dose000 stage1 n=600 k=3 m=3 random_walk_closed_form=0.750 majority=0.512 rule=0.743 logit=0.797 gbm=0.887 ceiling_gbm_50k_20k=0.914 rule_20k=0.746
+    LM C_s0 top1=0.832 agrees_with_rule=0.758 lm_right_rule_wrong=99 rule_right_lm_wrong=46 top1_after_phase1=0.820 top1_after_phase2=0.837
+dose000 stage2 n=600 k=3 m=1 random_walk_closed_form=0.833 majority=0.523 rule=0.922 logit=0.998 gbm=0.997 ceiling_gbm_50k_20k=0.998 rule_20k=0.914 n_agree=493 n_disagree=107 rule_agree=0.905 rule_disagree=1.000 logit_agree=1.000 logit_disagree=0.991 gbm_agree=0.996 gbm_disagree=1.000
+    LM C_s0 top1=0.985 agrees_with_rule=0.923 lm_right_rule_wrong=42 rule_right_lm_wrong=4 agree=0.990 disagree=0.963 top1_after_phase1=0.980 top1_after_phase2=0.990
+dose000 stage3 n=600 k=1 m=1 random_walk_closed_form=0.750 majority=0.507 rule=0.913 logit=0.998 gbm=0.983 ceiling_gbm_50k_20k=0.997 rule_20k=0.914 n_agree=384 n_disagree=216 rule_agree=0.865 rule_disagree=1.000 logit_agree=1.000 logit_disagree=0.995 gbm_agree=0.990 gbm_disagree=0.972
+    LM C_s0 top1=0.963 agrees_with_rule=0.913 lm_right_rule_wrong=41 rule_right_lm_wrong=11 agree=0.971 disagree=0.949 top1_after_phase1=0.973 top1_after_phase2=0.978
+dose010 stage1 n=600 k=3 m=3 random_walk_closed_form=0.750 majority=0.513 rule=0.732 logit=0.788 gbm=0.830 ceiling_gbm_50k_20k=0.838 rule_20k=0.746
+    LM C_s0 top1=0.807 agrees_with_rule=0.822 lm_right_rule_wrong=76 rule_right_lm_wrong=31 top1_after_phase1=0.788 top1_after_phase2=0.807
+dose010 stage2 n=600 k=3 m=1 random_walk_closed_form=0.833 majority=0.523 rule=0.913 logit=0.988 gbm=0.988 ceiling_gbm_50k_20k=0.975 rule_20k=0.912 n_agree=492 n_disagree=108 rule_agree=0.894 rule_disagree=1.000 logit_agree=0.994 logit_disagree=0.963 gbm_agree=0.994 gbm_disagree=0.963
+    LM C_s0 top1=0.968 agrees_with_rule=0.915 lm_right_rule_wrong=42 rule_right_lm_wrong=9 agree=0.974 disagree=0.944 top1_after_phase1=0.942 top1_after_phase2=0.953
+dose010 stage3 n=600 k=1 m=1 random_walk_closed_form=0.750 majority=0.502 rule=0.925 logit=0.955 gbm=0.952 ceiling_gbm_50k_20k=0.953 rule_20k=0.907 n_agree=379 n_disagree=221 rule_agree=0.884 rule_disagree=0.995 logit_agree=0.968 logit_disagree=0.932 gbm_agree=0.960 gbm_disagree=0.937
+    LM C_s0 top1=0.950 agrees_with_rule=0.922 lm_right_rule_wrong=31 rule_right_lm_wrong=16 agree=0.953 disagree=0.946 top1_after_phase1=0.945 top1_after_phase2=0.950
+dose025 stage1 n=600 k=3 m=3 random_walk_closed_form=0.750 majority=0.507 rule=0.732 logit=0.767 gbm=0.775 ceiling_gbm_50k_20k=0.809 rule_20k=0.750
+    LM C_s0 top1=0.782 agrees_with_rule=0.877 lm_right_rule_wrong=52 rule_right_lm_wrong=22 top1_after_phase1=0.752 top1_after_phase2=0.772
+dose025 stage2 n=600 k=3 m=1 random_walk_closed_form=0.833 majority=0.522 rule=0.902 logit=0.965 gbm=0.948 ceiling_gbm_50k_20k=0.957 rule_20k=0.915 n_agree=493 n_disagree=107 rule_agree=0.882 rule_disagree=0.991 logit_agree=0.974 logit_disagree=0.925 gbm_agree=0.957 gbm_disagree=0.907
+    LM C_s0 top1=0.918 agrees_with_rule=0.930 lm_right_rule_wrong=26 rule_right_lm_wrong=16 agree=0.917 disagree=0.925 top1_after_phase1=0.918 top1_after_phase2=0.923
+dose025 stage3 n=600 k=1 m=1 random_walk_closed_form=0.750 majority=0.505 rule=0.902 logit=0.913 gbm=0.905 ceiling_gbm_50k_20k=0.912 rule_20k=0.888 n_agree=372 n_disagree=228 rule_agree=0.871 rule_disagree=0.952 logit_agree=0.941 logit_disagree=0.868 gbm_agree=0.933 gbm_disagree=0.860
+    LM C_s0 top1=0.898 agrees_with_rule=0.917 lm_right_rule_wrong=24 rule_right_lm_wrong=26 agree=0.927 disagree=0.851 top1_after_phase1=0.883 top1_after_phase2=0.895
+dose050 stage1 n=600 k=3 m=3 random_walk_closed_form=0.750 majority=0.503 rule=0.727 logit=0.750 gbm=0.748 ceiling_gbm_50k_20k=0.780 rule_20k=0.753
+    LM C_s0 top1=0.733 agrees_with_rule=0.897 lm_right_rule_wrong=33 rule_right_lm_wrong=29 top1_after_phase1=0.737 top1_after_phase2=0.735
+    LM C_s1 top1=0.752 agrees_with_rule=0.882 lm_right_rule_wrong=43 rule_right_lm_wrong=28 top1_after_phase1=0.715 top1_after_phase2=0.740
+dose050 stage2 n=600 k=3 m=1 random_walk_closed_form=0.833 majority=0.527 rule=0.883 logit=0.903 gbm=0.903 ceiling_gbm_50k_20k=0.923 rule_20k=0.902 n_agree=488 n_disagree=112 rule_agree=0.875 rule_disagree=0.920 logit_agree=0.922 logit_disagree=0.821 gbm_agree=0.914 gbm_disagree=0.857
+    LM C_s0 top1=0.862 agrees_with_rule=0.928 lm_right_rule_wrong=15 rule_right_lm_wrong=28 agree=0.881 disagree=0.777 top1_after_phase1=0.842 top1_after_phase2=0.872
+    LM C_s1 top1=0.860 agrees_with_rule=0.920 lm_right_rule_wrong=17 rule_right_lm_wrong=31 agree=0.875 disagree=0.795 top1_after_phase1=0.842 top1_after_phase2=0.850
+dose050 stage3 n=600 k=1 m=1 random_walk_closed_form=0.750 majority=0.513 rule=0.850 logit=0.842 gbm=0.847 ceiling_gbm_50k_20k=0.850 rule_20k=0.841 n_agree=346 n_disagree=254 rule_agree=0.838 rule_disagree=0.866 logit_agree=0.893 logit_disagree=0.772 gbm_agree=0.887 gbm_disagree=0.791
+    LM C_s0 top1=0.830 agrees_with_rule=0.903 lm_right_rule_wrong=23 rule_right_lm_wrong=35 agree=0.887 disagree=0.752 top1_after_phase1=0.817 top1_after_phase2=0.825
+    LM C_s1 top1=0.818 agrees_with_rule=0.872 lm_right_rule_wrong=29 rule_right_lm_wrong=48 agree=0.864 disagree=0.756 top1_after_phase1=0.817 top1_after_phase2=0.803
+dose075 stage1 n=600 k=3 m=3 random_walk_closed_form=0.750 majority=0.518 rule=0.735 logit=0.740 gbm=0.732 ceiling_gbm_50k_20k=0.759 rule_20k=0.756
+    LM C_s0 top1=0.720 agrees_with_rule=0.895 lm_right_rule_wrong=27 rule_right_lm_wrong=36 top1_after_phase1=0.702 top1_after_phase2=0.732
+dose075 stage2 n=600 k=3 m=1 random_walk_closed_form=0.833 majority=0.530 rule=0.872 logit=0.873 gbm=0.880 ceiling_gbm_50k_20k=0.875 rule_20k=0.868 n_agree=475 n_disagree=125 rule_agree=0.874 rule_disagree=0.864 logit_agree=0.884 logit_disagree=0.832 gbm_agree=0.895 gbm_disagree=0.824
+    LM C_s0 top1=0.845 agrees_with_rule=0.897 lm_right_rule_wrong=23 rule_right_lm_wrong=39 agree=0.857 disagree=0.800 top1_after_phase1=0.803 top1_after_phase2=0.825
+dose075 stage3 n=600 k=1 m=1 random_walk_closed_form=0.750 majority=0.513 rule=0.777 logit=0.772 gbm=0.783 ceiling_gbm_50k_20k=0.791 rule_20k=0.788 n_agree=318 n_disagree=282 rule_agree=0.792 rule_disagree=0.759 logit_agree=0.824 logit_disagree=0.713 gbm_agree=0.818 gbm_disagree=0.745
+    LM C_s0 top1=0.755 agrees_with_rule=0.855 lm_right_rule_wrong=37 rule_right_lm_wrong=50 agree=0.827 disagree=0.674 top1_after_phase1=0.752 top1_after_phase2=0.737
+dose100 stage1 n=600 k=3 m=3 random_walk_closed_form=0.750 majority=0.512 rule=0.735 logit=0.743 gbm=0.730 ceiling_gbm_50k_20k=0.758 rule_20k=0.758
+    LM C_s0 top1=0.740 agrees_with_rule=0.948 lm_right_rule_wrong=17 rule_right_lm_wrong=14 top1_after_phase1=0.718 top1_after_phase2=0.750
+    LM C_s1 top1=0.732 agrees_with_rule=0.907 lm_right_rule_wrong=27 rule_right_lm_wrong=29 top1_after_phase1=0.737 top1_after_phase2=0.738
+    LM F_s0 top1=0.475 agrees_with_rule=0.433 lm_right_rule_wrong=92 rule_right_lm_wrong=248 top1_after_phase1=0.533 top1_after_phase2=0.520
+dose100 stage2 n=600 k=3 m=1 random_walk_closed_form=0.833 majority=0.512 rule=0.828 logit=0.828 gbm=0.823 ceiling_gbm_50k_20k=0.830 rule_20k=0.829 n_agree=444 n_disagree=156 rule_agree=0.874 rule_disagree=0.699 logit_agree=0.865 logit_disagree=0.724 gbm_agree=0.858 gbm_disagree=0.724
+    LM C_s0 top1=0.798 agrees_with_rule=0.873 lm_right_rule_wrong=29 rule_right_lm_wrong=47 agree=0.860 disagree=0.622 top1_after_phase1=0.782 top1_after_phase2=0.775
+    LM C_s1 top1=0.750 agrees_with_rule=0.808 lm_right_rule_wrong=34 rule_right_lm_wrong=81 agree=0.827 disagree=0.532 top1_after_phase1=0.740 top1_after_phase2=0.758
+    LM F_s0 top1=0.830 agrees_with_rule=0.945 lm_right_rule_wrong=17 rule_right_lm_wrong=16 agree=0.876 disagree=0.699 top1_after_phase1=0.813 top1_after_phase2=0.820
+dose100 stage3 n=600 k=1 m=1 random_walk_closed_form=0.750 majority=0.538 rule=0.747 logit=0.747 gbm=0.740 ceiling_gbm_50k_20k=0.747 rule_20k=0.745 n_agree=314 n_disagree=286 rule_agree=0.774 rule_disagree=0.717 logit_agree=0.780 logit_disagree=0.710 gbm_agree=0.761 gbm_disagree=0.717
+    LM C_s0 top1=0.713 agrees_with_rule=0.837 lm_right_rule_wrong=39 rule_right_lm_wrong=59 agree=0.787 disagree=0.633 top1_after_phase1=0.702 top1_after_phase2=0.683
+    LM C_s1 top1=0.675 agrees_with_rule=0.772 lm_right_rule_wrong=47 rule_right_lm_wrong=90 agree=0.729 disagree=0.615 top1_after_phase1=0.695 top1_after_phase2=0.698
+    LM F_s0 top1=0.567 agrees_with_rule=0.600 lm_right_rule_wrong=66 rule_right_lm_wrong=174 agree=0.643 disagree=0.483 top1_after_phase1=0.550 top1_after_phase2=0.572

@@ -1,0 +1,248 @@
+{
+ "config": {
+  "registry_version_dir": "reg/sethlei/oil-fundamentals-prices/1.0.0",
+  "llm_id": "meta-llama/Llama-3.2-1B",
+  "checkpoint_repo": "OpenTSLM/llama-3.2-1b-m4-sp",
+  "information_set": "per-signal",
+  "window": 48,
+  "aux": false,
+  "epochs": 9,
+  "patience": 3,
+  "batch_size": 8,
+  "lr_encoder": 0.0002,
+  "lr_projector": 0.0001,
+  "lr_lora": 0.0002,
+  "weight_decay": 0.01,
+  "warmup_frac": 0.1,
+  "grad_clip": 1.0,
+  "lora": true,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "seed": 0,
+  "gradient_checkpointing": true,
+  "arm": "C",
+  "arm_phases": [
+   null,
+   null,
+   null
+  ],
+  "lateral_source": "dose",
+  "dose": 1.0,
+  "scale_mode": "visible",
+  "train_seed": 1,
+  "data_seed": 0,
+  "K": 2,
+  "n_train": 1500,
+  "anchors": [
+   0,
+   6,
+   12,
+   18,
+   24,
+   30,
+   35
+  ],
+  "spec": "an earlier internal spec, not published"
+ },
+ "started": "2026-11-22T16:43:58+0000",
+ "events": [
+  {
+   "t": "16:44:34",
+   "phase": 1,
+   "epoch": 0,
+   "train_loss": 0.7528,
+   "val_loss": 0.9553,
+   "seconds": 26.7
+  },
+  {
+   "t": "16:45:00",
+   "phase": 1,
+   "epoch": 1,
+   "train_loss": 0.7144,
+   "val_loss": 0.6052,
+   "seconds": 26.3
+  },
+  {
+   "t": "16:45:26",
+   "phase": 1,
+   "epoch": 2,
+   "train_loss": 0.6007,
+   "val_loss": 0.596,
+   "seconds": 26.3
+  },
+  {
+   "t": "16:45:59",
+   "phase": 2,
+   "epoch": 0,
+   "train_loss": 0.6632,
+   "val_loss": 0.6298,
+   "seconds": 26.3
+  },
+  {
+   "t": "16:46:26",
+   "phase": 2,
+   "epoch": 1,
+   "train_loss": 0.5917,
+   "val_loss": 0.6568,
+   "seconds": 26.5
+  },
+  {
+   "t": "16:46:52",
+   "phase": 2,
+   "epoch": 2,
+   "train_loss": 0.554,
+   "val_loss": 0.6004,
+   "seconds": 26.4
+  },
+  {
+   "t": "16:47:25",
+   "phase": 3,
+   "epoch": 0,
+   "train_loss": 0.6049,
+   "val_loss": 0.6282,
+   "seconds": 26.4
+  },
+  {
+   "t": "16:47:52",
+   "phase": 3,
+   "epoch": 1,
+   "train_loss": 0.5801,
+   "val_loss": 0.5585,
+   "seconds": 26.5
+  },
+  {
+   "t": "16:48:18",
+   "phase": 3,
+   "epoch": 2,
+   "train_loss": 0.5337,
+   "val_loss": 0.5395,
+   "seconds": 26.4
+  }
+ ],
+ "status": "DONE",
+ "device": "cuda",
+ "platform": "Linux-6.11.0-1016-nvidia-x86_64-with-glibc2.39",
+ "torch": "2.15.0+cu132",
+ "sha": {
+  "box": "c197ba1245c31fcf86de0ed0d0e7209ff7f0a034"
+ },
+ "before_training": {
+  "stage1": {
+   "n": 600,
+   "top1": 0.5116666666666667,
+   "majority": 0.5116666666666667,
+   "logscore": 0.8256350755691528,
+   "output_variation": 0.03047989495098591
+  },
+  "stage2": {
+   "n": 600,
+   "top1": 0.5116666666666667,
+   "majority": 0.5116666666666667,
+   "logscore": 0.7500693798065186,
+   "output_variation": 0.022076895460486412
+  },
+  "stage3": {
+   "n": 600,
+   "top1": 0.5383333333333333,
+   "majority": 0.5383333333333333,
+   "logscore": 0.7090184688568115,
+   "output_variation": 0.020016498863697052
+  }
+ },
+ "epochs_per_phase": 3,
+ "table": {
+  "after_phase1": {
+   "stage1": {
+    "n": 600,
+    "top1": 0.7366666666666667,
+    "majority": 0.5116666666666667,
+    "logscore": 0.5485098361968994,
+    "output_variation": 0.2813163697719574
+   },
+   "stage2": {
+    "n": 600,
+    "top1": 0.74,
+    "majority": 0.5116666666666667,
+    "logscore": 0.5552248358726501,
+    "output_variation": 0.2925381064414978
+   },
+   "stage3": {
+    "n": 600,
+    "top1": 0.695,
+    "majority": 0.5383333333333333,
+    "logscore": 0.6051580309867859,
+    "output_variation": 0.2737278342247009
+   }
+  },
+  "after_phase2": {
+   "stage1": {
+    "n": 600,
+    "top1": 0.7383333333333333,
+    "majority": 0.5116666666666667,
+    "logscore": 0.5517408847808838,
+    "output_variation": 0.29354703426361084
+   },
+   "stage2": {
+    "n": 600,
+    "top1": 0.7583333333333333,
+    "majority": 0.5116666666666667,
+    "logscore": 0.5091988444328308,
+    "output_variation": 0.311283677816391
+   },
+   "stage3": {
+    "n": 600,
+    "top1": 0.6983333333333334,
+    "majority": 0.5383333333333333,
+    "logscore": 0.6051924824714661,
+    "output_variation": 0.2986948788166046
+   }
+  },
+  "after_phase3": {
+   "stage1": {
+    "n": 600,
+    "top1": 0.7316666666666667,
+    "majority": 0.5116666666666667,
+    "logscore": 0.5639265775680542,
+    "output_variation": 0.267882764339447
+   },
+   "stage2": {
+    "n": 600,
+    "top1": 0.75,
+    "majority": 0.5116666666666667,
+    "logscore": 0.5051777362823486,
+    "output_variation": 0.29641273617744446
+   },
+   "stage3": {
+    "n": 600,
+    "top1": 0.675,
+    "majority": 0.5383333333333333,
+    "logscore": 0.6106997728347778,
+    "output_variation": 0.2682245373725891
+   }
+  }
+ },
+ "phase_composition": {
+  "phase1": {
+   "stage1": 482,
+   "stage2": 532,
+   "stage3": 486
+  },
+  "phase2": {
+   "stage1": 527,
+   "stage2": 474,
+   "stage3": 499
+  },
+  "phase3": {
+   "stage1": 505,
+   "stage2": 508,
+   "stage3": 487
+  }
+ },
+ "item_passes_per_scale_so_far": {
+  "stage1": 4542,
+  "stage2": 4542,
+  "stage3": 4416
+ },
+ "train_seconds": 257.6,
+ "ended": "2026-11-22T16:48:25+0000"
+}

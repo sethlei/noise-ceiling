@@ -1,0 +1,5 @@
+reg
+__pycache__/
+.DS_Store
+hf_token.txt
+results_local/

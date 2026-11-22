@@ -1,0 +1,192 @@
+=== 2026-11-22 15:13:05 lateral4 --arm E --source real --seed 0 --n-eval 600
+# curriculum arm E / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(2, 1.0)], [(2, 1.0)], [(2, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.591 | 0.607 | 0.690 |
+| after_phase2 | 0.589 | 0.602 | 0.681 |
+| after_phase3 | 0.563 | 0.596 | 0.677 |
+=== 2026-11-22 15:17:42 lateral4 --arm C --source real --seed 0 --n-eval 600
+# curriculum arm C / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.605 | 0.682 | 0.604 |
+| after_phase2 | 0.684 | 0.709 | 0.673 |
+| after_phase3 | 0.716 | 0.732 | 0.663 |
+=== 2026-11-22 15:22:18 lateral4 --arm B --source real --seed 0 --n-eval 600
+# curriculum arm B / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(0, 1.0)], [(1, 0.6666666666666666), (0, 0.3333333333333333)], [(2, 0.5), (1, 0.25), (0, 0.25)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.711 | 0.618 | 0.544 |
+| after_phase2 | 0.737 | 0.778 | 0.557 |
+| after_phase3 | 0.722 | 0.758 | 0.647 |
+=== 2026-11-22 15:26:53 lateral4 --arm A --source real --seed 0 --n-eval 600
+# curriculum arm A / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(0, 1.0)], [(1, 1.0)], [(2, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.711 | 0.618 | 0.544 |
+| after_phase2 | 0.647 | 0.787 | 0.546 |
+| after_phase3 | 0.620 | 0.624 | 0.705 |
+=== 2026-11-22 15:31:29 lateral4 --arm D --source real --seed 0 --n-eval 600
+# curriculum arm D / real / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(2, 1.0)], [(1, 1.0)], [(0, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.591 | 0.607 | 0.690 |
+| after_phase2 | 0.612 | 0.777 | 0.578 |
+| after_phase3 | 0.706 | 0.743 | 0.594 |
+=== 2026-11-22 15:36:02 lateral4 --arm C --source dose --dose 1.0 --seed 0 --n-eval 600
+# curriculum arm C / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.512 | 0.512 | 0.538 |
+| after_phase1 | 0.718 | 0.782 | 0.702 |
+| after_phase2 | 0.750 | 0.775 | 0.683 |
+| after_phase3 | 0.740 | 0.798 | 0.713 |
+=== 2026-11-22 15:40:47 lateral4 --arm C --source dose --dose 0.5 --seed 0 --n-eval 600
+# curriculum arm C / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.497 | 0.473 | 0.513 |
+| after_phase1 | 0.737 | 0.842 | 0.817 |
+| after_phase2 | 0.735 | 0.872 | 0.825 |
+| after_phase3 | 0.733 | 0.862 | 0.830 |
+=== 2026-11-22 15:45:25 lateral4 --arm C --source dose --dose 0.0 --seed 0 --n-eval 600
+# curriculum arm C / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.488 | 0.477 | 0.493 |
+| after_phase1 | 0.820 | 0.980 | 0.973 |
+| after_phase2 | 0.837 | 0.990 | 0.978 |
+| after_phase3 | 0.832 | 0.985 | 0.963 |
+=== 2026-11-22 15:49:59 lateral4 --arm C --source dose --dose 0.25 --seed 0 --n-eval 600
+# curriculum arm C / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.493 | 0.478 | 0.505 |
+| after_phase1 | 0.752 | 0.918 | 0.883 |
+| after_phase2 | 0.772 | 0.923 | 0.895 |
+| after_phase3 | 0.782 | 0.918 | 0.898 |
+=== 2026-11-22 15:54:36 lateral4 --arm C --source dose --dose 0.75 --seed 0 --n-eval 600
+# curriculum arm C / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.482 | 0.470 | 0.513 |
+| after_phase1 | 0.702 | 0.803 | 0.752 |
+| after_phase2 | 0.732 | 0.825 | 0.737 |
+| after_phase3 | 0.720 | 0.845 | 0.755 |
+=== 2026-11-22 15:59:11 lateral4 --arm C --source dose --dose 0.1 --seed 0 --n-eval 600
+# curriculum arm C / dose / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.487 | 0.477 | 0.502 |
+| after_phase1 | 0.788 | 0.942 | 0.945 |
+| after_phase2 | 0.807 | 0.953 | 0.950 |
+| after_phase3 | 0.807 | 0.968 | 0.950 |
+=== 2026-11-22 16:03:47 lateral4 --arm E --source real --seed 1 --n-eval 600
+# curriculum arm E / real / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(2, 1.0)], [(2, 1.0)], [(2, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.604 | 0.620 | 0.697 |
+| after_phase2 | 0.589 | 0.596 | 0.682 |
+| after_phase3 | 0.562 | 0.571 | 0.663 |
+=== 2026-11-22 16:08:22 lateral4 --arm C --source real --seed 1 --n-eval 600
+# curriculum arm C / real / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.666 | 0.695 | 0.602 |
+| after_phase2 | 0.705 | 0.758 | 0.640 |
+| after_phase3 | 0.727 | 0.742 | 0.636 |
+=== 2026-11-22 16:13:00 lateral4 --arm B --source real --seed 1 --n-eval 600
+# curriculum arm B / real / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(0, 1.0)], [(1, 0.6666666666666666), (0, 0.3333333333333333)], [(2, 0.5), (1, 0.25), (0, 0.25)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.706 | 0.613 | 0.496 |
+| after_phase2 | 0.719 | 0.764 | 0.570 |
+| after_phase3 | 0.705 | 0.730 | 0.647 |
+=== 2026-11-22 16:17:32 lateral4 --arm A --source real --seed 1 --n-eval 600
+# curriculum arm A / real / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(0, 1.0)], [(1, 1.0)], [(2, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.706 | 0.613 | 0.496 |
+| after_phase2 | 0.568 | 0.804 | 0.544 |
+| after_phase3 | 0.610 | 0.616 | 0.711 |
+=== 2026-11-22 16:22:07 lateral4 --arm D --source real --seed 1 --n-eval 600
+# curriculum arm D / real / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(2, 1.0)], [(1, 1.0)], [(0, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.490 | 0.490 | 0.494 |
+| after_phase1 | 0.604 | 0.620 | 0.697 |
+| after_phase2 | 0.543 | 0.759 | 0.621 |
+| after_phase3 | 0.714 | 0.737 | 0.626 |
+=== 2026-11-22 16:26:42 lateral4 --arm C --source synth --seed 0
+# curriculum arm C / synth / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.507 | 0.503 | 0.483 |
+| after_phase1 | 0.810 | 0.887 | 0.807 |
+| after_phase2 | 0.810 | 0.910 | 0.840 |
+| after_phase3 | 0.803 | 0.900 | 0.870 |
+=== 2026-11-22 16:31:05 lateral4 --arm C --source synth --seed 1
+# curriculum arm C / synth / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.507 | 0.503 | 0.483 |
+| after_phase1 | 0.790 | 0.870 | 0.797 |
+| after_phase2 | 0.813 | 0.880 | 0.853 |
+| after_phase3 | 0.823 | 0.890 | 0.863 |
+=== 2026-11-22 16:35:22 lateral4 --arm E --source synth --seed 0
+# curriculum arm E / synth / train seed 0: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(2, 1.0)], [(2, 1.0)], [(2, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.507 | 0.503 | 0.483 |
+| after_phase1 | 0.593 | 0.783 | 0.870 |
+| after_phase2 | 0.593 | 0.633 | 0.890 |
+| after_phase3 | 0.503 | 0.550 | 0.893 |
+=== 2026-11-22 16:39:39 lateral4 --arm E --source synth --seed 1
+# curriculum arm E / synth / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [[(2, 1.0)], [(2, 1.0)], [(2, 1.0)]]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.507 | 0.503 | 0.483 |
+| after_phase1 | 0.607 | 0.643 | 0.867 |
+| after_phase2 | 0.600 | 0.647 | 0.900 |
+| after_phase3 | 0.703 | 0.653 | 0.913 |
+=== 2026-11-22 16:43:54 lateral4 --arm C --source dose --dose 1.0 --seed 1 --n-eval 600
+# curriculum arm C / dose / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.512 | 0.512 | 0.538 |
+| after_phase1 | 0.737 | 0.740 | 0.695 |
+| after_phase2 | 0.738 | 0.758 | 0.698 |
+| after_phase3 | 0.732 | 0.750 | 0.675 |
+=== 2026-11-22 16:48:25 lateral4 --arm C --source dose --dose 0.5 --seed 1 --n-eval 600
+# curriculum arm C / dose / train seed 1: held-out top-1 per eval scale (majority ≈ 0.5); rows = training progress; phases = [None, None, None]
+| trained through | eval stage 1 (anchors) | eval stage 2 (18 visible) | eval stage 3 (all but one) |
+|---|---|---|---|
+| nothing | 0.497 | 0.473 | 0.513 |
+| after_phase1 | 0.715 | 0.842 | 0.817 |
+| after_phase2 | 0.740 | 0.850 | 0.803 |
+| after_phase3 | 0.752 | 0.860 | 0.818 |
+=== 2026-11-22 16:52:59 keyfree A2
+💾 Saved LoRA adapters with 224 parameters
+💾 Saved LoRA adapters with 224 parameters
+| family | h | n | model RMSE | model MAE | reference RMSE | reference MAE | model Brier | uniform Brier | Gaussian clim. Brier | model log score | uniform log score | Gaussian clim. log score |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| T1 | 1 | 48 | 6.17 | 5.01 | 5.71 | 4.66 | 0.916 | 0.857 | 0.840 | 2.115 | 1.946 | 1.885 |
+| T1 | 3 | 48 | 11.94 | 9.43 | 10.69 | 7.92 | 0.909 | 0.857 | 0.862 | 2.081 | 1.946 | 1.941 |
+| T1 | 6 | 48 | 17.50 | 14.14 | 15.03 | 10.92 | 0.918 | 0.857 | 0.851 | 2.121 | 1.946 | 1.910 |
+| T1 | 12 | 46 | 23.84 | 19.99 | 18.93 | 14.92 | 0.920 | 0.857 | 0.793 | 2.134 | 1.946 | 1.763 |
+| T2 | 1 | 57 | 4.62 | 3.24 | 4.31 | 3.17 | 0.895 | 0.857 | 0.874 | 2.045 | 1.946 | 2.004 |
+| T2 | 3 | 55 | 13.19 | 10.30 | 12.72 | 9.41 | 0.888 | 0.857 | 0.840 | 2.041 | 1.946 | 1.879 |
+| T2 | 6 | 52 | 17.49 | 13.95 | 16.52 | 12.22 | 0.900 | 0.857 | 0.863 | 2.075 | 1.946 | 1.936 |
+| T2 | 12 | 46 | 21.24 | 18.04 | 19.84 | 14.88 | 0.890 | 0.857 | 0.778 | 2.051 | 1.946 | 1.719 |
+
+Information set: per-signal; reference column = random walk (T1) / STEO (T2); uniform = 1/7 over the equal-mass training bins; Gaussian clim. = N(train residual mean, sd) through the bin edges, the ordinal null (the reference's own scores as a point mass are in table.json). USD per barrel on the WTI monthly mean; test split = target months 2022-01 to 2026-10; compare with `baselines_2026-11-11.md`.
+=== done 2026-11-22 17:18:43 fails=0
