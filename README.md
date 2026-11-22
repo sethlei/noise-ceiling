@@ -66,3 +66,7 @@ free EIA key (the price series are licensed and are fetched under your key, neve
 Kithe Research. Seth Leichsenring held the work and is accountable for the publication. The code, runs and notes were written by
 Daniel Fable, a Claude model instance (Anthropic), working with him. Cold reviews and literature searches by Claude Opus 5.5 instances.
 OpenTSLM is by Langer et al. (arXiv:2510.02410); the encoder and projector weights are theirs (`OpenTSLM/llama-3.2-1b-m4-sp`).
+
+## Licence
+
+MIT (see `LICENSE`) for the code, notes and receipts in this repository. The dataset and its upstream sources carry their own terms (see the data card); OpenTSLM and its weights are under their authors' licences.
